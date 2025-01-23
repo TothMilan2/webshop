@@ -13,20 +13,39 @@
 </head>
 <body>
     <header>
-        <div id="fejlec">
-            <div class="topnav">
-                <a href="#home" class="active">Logo</a>
-                <div id="myLinks">
-                  <a href="#news">news</a>
-                  <a href="#contact">Contact</a>
-                  <a href="#about">About</a>
-                </div>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                  <i class="fa fa-bars"></i>
-                </a>
-              </div>
-        </div>
-    </header>
+      <div id="fejlec">
+        <div id="mySidepanel" class="sidepanel">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="#">Sneakerek<span></span></a>
+          <a href="#">Streetwear<span></span></a>
+          <a href="#">Kiegészítők<span></span></a>
+          <a href="#">Rólunk</a>
+      </div>
+      <button class="openbtn" onclick="openNav()">&#9776;</button>
+      <h1>Looped Kicks</h1>
+      <i class="fa fa-shopping-basket" style="font-size:36px;"></i>
+  </div>
     
+      </div>
+    </header>
+    <div id="legjobb">
+      <h1>BEST SELLERS</h1>
+      <div id="kepek">
+      <img id="af1" src="af1.jpg" alt="af1">
+      <img id="campus" src="campus.webp" alt="">
+      <img id="obsidian" src="obsidian.webp" alt="">
+      <img id="slide" src="slide.webp" alt="">
+      </div>
+    </div>
+    <script>
+      function openNav() {
+          document.getElementById("mySidepanel").style.width = "100%";
+        }
+       
+        /* Close when someone clicks on the "x" symbol inside the overlay */
+        function closeNav() {
+          document.getElementById("mySidepanel").style.width = "0%";
+        }
+  </script>
 </body>
 </html>
