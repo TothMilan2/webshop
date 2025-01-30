@@ -28,9 +28,9 @@ nav a{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 nav{
-    display: flex;
+
     justify-content: center;
-    flex-direction: row;
+  
     gap: 50px;
 }
 .hambimenu{
@@ -40,6 +40,17 @@ nav{
     width: 20%;
     background-color: black;
 
+}
+.shop{
+ 
+}
+.shop_content{
+    width: 30%;
+
+}
+.in_shop{
+    display: flex;
+    flex-direction: row;
 }
 .shop img{
     width: 20%;
@@ -52,7 +63,7 @@ nav{
     text-align: center;
     margin: 5% 5%;
     margin-right: 0;
-   
+    
 }
 #cimlink{
     margin-left: 0;
