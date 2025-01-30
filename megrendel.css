@@ -21,12 +21,17 @@ nav a{
     color: black;
     font-family:Arial, Helvetica, sans-serif;
     font-size: 1.8rem;
+    padding-left: 0%;
+    margin: 0%;
+    text-align: left;
 }
 nav{
     display: flex;
     justify-content: center;
-    gap: 20%;
-    margin-left: 20%;
+    gap: 5%;
+    margin: 0%;
+    padding-left: 0%;
+    width: 20%;
 }
 .hambimenu{
     display: block;
@@ -36,6 +41,34 @@ nav{
     background-color: black;
 
 }
-.megrendel img{
+
+.elemkepe{
     width: 30%;
 }
+.megrendel{
+    display: flex;
+    flex-direction: row;
+    
+}
+.elemneve{
+    font-size: 50px;
+}
+.leiras{
+    display: flex;
+    flex-direction: column;
+}
+.elemszoveg{
+    padding-top: 0%;
+    margin-top: 10px;
+}
+.elemneve{
+    margin: 0%;
+}
+.elemara{
+    font-size: 25px;
+}
+.megrendelgomb{
+    width: 30%;
+    margin-left: 50%;
+}
+
