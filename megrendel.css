@@ -5,10 +5,17 @@ body{
 }
 header{
     height: 20%;
-    background-color: #D9D9D9;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-image: url(rap.jpg);
+    background-position: 10%;
+    background-repeat: no-repeat;
+    background-size: 120%;
+    border-bottom: 10%;
+    border: pink;
+    
+    
 }
 footer{
     height: 20%;
@@ -18,7 +25,7 @@ footer{
 }
 nav a{
     text-decoration: none;
-    color: black;
+    color:black;
     font-family:Arial, Helvetica, sans-serif;
     font-size: 1.8rem;
     padding-left: 0%;
@@ -44,10 +51,14 @@ nav{
 
 .elemkepe{
     width: 30%;
+    height: 90%;
 }
 .megrendel{
     display: flex;
     flex-direction: row;
+    border-top: 2px solid rgb(112, 33, 33);
+    
+    
     
 }
 .elemneve{
@@ -68,7 +79,28 @@ nav{
     font-size: 25px;
 }
 .megrendelgomb{
-    width: 30%;
-    margin-left: 50%;
+    width: 20%;
+    margin-left: 0%;
+    height: 10%;
+    border-radius: 0%;
+    border-color: red;
+    font-family: "Bebas Neue";
+    font-size: 20px;
+}
+.kerekecskegombocska{
+    border-radius: 0%;
+    border-color: black;
+    width: 40% ;
+    height: 115%;
+}
+.miau{
+    font-size: 23px;
+    font-family: "Bebas Neue";
+}
+.kosar{
+    width: 90%;
+    height: 80%;
+    padding-right: 0%;
+    padding-left: 100%;
 }
 
