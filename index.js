@@ -1,11 +1,7 @@
-const keplink=document.getElementById('shop_content')
-const kep=document.getElementsByClassName('kep')
-
-
-keplink.addEventListener('click', function() {
+function redirectToDisplay(imageSrc, text) {
+    // Construct the URL with encoded parameters
+    const url = `megrendel.html?image=${encodeURIComponent(imageSrc)}&text=${encodeURIComponent(text)}`;
     
-    localStorage.setItem('updatedContent', 'kep');
-    
-
-    window.location.href = 'megrendel.html'; 
-})
+    // Redirect to the display page
+    window.location.href = url;
+}
