@@ -1,3 +1,7 @@
+@font-face {
+    font-family: "Rapfont";
+    src: url("BronxBystreets-aDqK.ttf");
+  }
 body{
     height: 100vh;
     width: 100%;
@@ -5,14 +9,14 @@ body{
 }
 header{
     height: 20%;
-    background-color: #D9D9D9;
     display: flex;
     flex-direction: row;
     justify-content: left;
     align-items: center;
     gap: 20%;
     padding-left: 30px;
-    
+    background-image: url(rap.jpg);
+
 }
 footer{
     height: 20%;
@@ -22,16 +26,35 @@ footer{
 }
 nav a{
     text-decoration: none;
-    color: black;
     font-family:Arial, Helvetica, sans-serif;
-    font-size: 1.8rem;
+    font-size: 2.99rem;
     margin: 50px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    font-family:Rapfont;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+nav a:hover{
+    opacity: 0.8;
+    transition:0.4s;
+}
+header h1{
+    font-family: Rapfont;
+    color: white;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    border-radius: 15px;
+}
+header #cimlink:hover{
+    opacity: 0.8;
+    transition: 0.4s
 }
 nav{
     justify-content: space-between;
-    
     width: 100%;
+    
 }
 .hambimenu{
     display: block;
