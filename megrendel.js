@@ -1,17 +1,19 @@
-// Function to get the query parameters from the URL
-function getQueryParam(param) {
+ // Function to get URL parameters
+ function getQueryParams() {
   const urlParams = new URLSearchParams(window.location.search);
-  return urlParams.get(param);
+  return {
+      image: urlParams.get('image'),
+
+  };
 }
 
-// Get the image source and text from the URL
-const imageSrc = getQueryParam('kep');
-const text = getQueryParam('szoveg');
+// Load the image and text based on the query parameters
+const params = getQueryParams();
+const image = params.image;
 
-// Set the image source and text content on the page
-if (imageSrc && text) {
-  document.getElementById('image').src = kep;
-  document.getElementById('text').textContent = szoveg;
-} else {
-  document.getElementById('text').textContent = 'No image or text found!';
+
+if (image) {
+  // Set the image source from the query parameter
+  document.getElementById('image').src = image;
 }
+
