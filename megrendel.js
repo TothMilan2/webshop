@@ -5,13 +5,13 @@ function getQueryParam(param) {
 }
 
 // Get the image source and text from the URL
-const imageSrc = getQueryParam('image');
-const text = getQueryParam('text');
+const imageSrc = getQueryParam('kep');
+const text = getQueryParam('szoveg');
 
 // Set the image source and text content on the page
 if (imageSrc && text) {
-  document.getElementById('image').src = imageSrc;
-  document.getElementById('text').textContent = text;
+  document.getElementById('image').src = kep;
+  document.getElementById('text').textContent = szoveg;
 } else {
   document.getElementById('text').textContent = 'No image or text found!';
 }

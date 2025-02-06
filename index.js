@@ -1,6 +1,6 @@
-function redirectToDisplay(imageSrc, text) {
+function redirectToDisplay(kep, szoveg) {
     // Construct the URL with encoded parameters
-    const url = `megrendel.html?image=${encodeURIComponent(imageSrc)}&text=${encodeURIComponent(text)}`;
+    const url = `megrendel.html?image=${encodeURIComponent(kep)}&text=${encodeURIComponent(szoveg)}`;
     
     // Redirect to the display page
     window.location.href = url;
