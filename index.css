@@ -3,10 +3,13 @@
     src: url("BronxBystreets-aDqK.ttf");
   }
 body{
-    height: 100vh;
+    height: 100%;
     width: 100%;
     margin: 0;
+
 }
+
+/*Header*/
 header{
     height: 20%;
     display: flex;
@@ -15,7 +18,7 @@ header{
     align-items: center;
     gap: 20%;
     padding-left: 30px;
-    background-image: url(rap.jpg);
+    background-image: url(./kepek/rap.jpg);
 
 }
 footer{
@@ -26,14 +29,11 @@ footer{
 }
 nav a{
     text-decoration: none;
-    font-family:Arial, Helvetica, sans-serif;
     font-size: 2.99rem;
     margin: 50px;
     color: white;
     font-family:Rapfont;
     text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
-    padding: 15px;
-    border-radius: 15px;
     cursor: pointer;
 }
 nav a:hover{
@@ -65,20 +65,47 @@ nav{
 
 }
 
+
+/*Main content*/
+
+.mainkeret{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
 #shop_content{
     display: block;
     cursor: pointer;
+    width: 100%;
+    height:100% ;
+
+
 
 }
 .in_shop{
     display: flex;
     flex-direction: row;
 }
+
 .shop img{
-    width: 50%;
+    width: 60%;
+    margin: auto;
+    
+}
+.in_shop p{
+    margin-right: 50px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    font-style: italic;
+    font-family: Rapfont;
 }
 .shop h1{
+
     background-color: #D9D9D9;
+    color: rgb(29, 28, 28);
     width: 20%;
     border-radius: 15px;
     padding:  15px ;
