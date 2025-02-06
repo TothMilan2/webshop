@@ -34,7 +34,7 @@ nav a{
 }
 nav{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     gap: 5%;
     margin: 0%;
     padding-left: 0%;
@@ -102,5 +102,7 @@ nav{
     height: 80%;
     padding-right: 0%;
     padding-left: 100%;
+    margin-right: 0%;
+    float: right;
 }
 
