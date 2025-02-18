@@ -1,7 +1,8 @@
 function openImagePage() {
     // The path to the image, and any text you want to pass
     const kep = "./kepek/ball.jpg";  // Path to the image
-    const szoveg = "Véééééégre";  // Some text to pass
+    const szoveg = "Kosárlabda";
+    const szoveg2 = "20000Ft";  // Some text to pass
 
     // Create the URL for the second page (megrendel.html)
     const url = `megrendel.html?image=${encodeURIComponent(kep)}&text=${encodeURIComponent(szoveg)}`;
@@ -13,7 +14,8 @@ function openImagePage() {
 function openImagePage2() {
     // The path to the image, and any text you want to pass
     const kep = "./kepek/campus.webp";  // Path to the image
-    const szoveg = "Véééééégre2";  // Some text to pass
+    const szoveg = "Cipő";
+    const szoveg2 = "20000Ft";  // Some text to pass
 
     // Create the URL for the second page (megrendel.html)
     const url = `megrendel.html?image=${encodeURIComponent(kep)}&text=${encodeURIComponent(szoveg)}`;
@@ -69,4 +71,7 @@ function openImagePage6() {
     // Navigate to the new page
     window.location.href = url;
 }
+
+
+
 
