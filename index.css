@@ -18,6 +18,7 @@ header{
     align-items: center;
     gap: 20%;
     padding-left: 30px;
+    background-image: url(./kepek/rap.jpg);
     
 }
 footer{
@@ -28,15 +29,16 @@ footer{
 }
 nav a{
     text-decoration: none;
-    color: black;
-    font-family:Arial, Helvetica, sans-serif;
-    font-size: 1.8rem;
+    color: white;
+    font-family: Rapfont;
+    font-size: 2.4rem;
     margin: 50px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    
 }
 nav{
     justify-content: space-between;
-    
+    color: white;
     width: 100%;
     
 }
@@ -45,7 +47,7 @@ nav{
 }
 .hambimenu span{
     width: 20%;
-    background-color: black;
+   
 
 }
 
@@ -82,15 +84,16 @@ nav{
     text-align: center;
     margin: 5% 5%;
     margin-right: 0;
+   
     
 }
 #cimlink{
-    margin-left: 0;
+    margin-left: -30px;
     font-size: 1.9rem;
     width: fit-content;
     cursor: pointer;
     text-decoration: none;
     color: white;
-
+    font-family: Rapfont;
 
 }
