@@ -23,9 +23,11 @@ header{
 }
 footer{
     height: 20%;
-    background-color: #D9D9D9;
+    background-color: #272525;
     bottom: 0;
-    position: absolute;
+    color: white;
+    position: relative;
+    height: 30vh;
 }
 nav a{
     text-decoration: none;
@@ -33,14 +35,22 @@ nav a{
     font-family: Rapfont;
     font-size: 2.4rem;
     margin: 50px;
+    margin-bottom: 0;
 
     
 }
 nav{
+    display: flex;
+    align-items: center;
     justify-content: space-between;
     color: white;
     width: 100%;
+
     
+}
+nav img{
+    float: right;
+    width: 80px;
 }
 .hambimenu{
     display: block;
