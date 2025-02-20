@@ -2,10 +2,12 @@
     font-family: "Rapfont";
     src: url("BronxBystreets-aDqK.ttf");
   }
+
 body{
     height: 100%;
     width: 100%;
     margin: 0;
+    padding: 0;
 }
 
 /*Header*/
@@ -22,7 +24,7 @@ header{
     border-bottom: 10%;
     border: pink;
     gap: 50px;    
-    
+    margin-bottom: 10%;
 }
 nav{
     display: flex;
@@ -83,99 +85,21 @@ nav a:hover{
     background-color: black;
 
 }
-
-
-
-
-
-
-/*Main*/
-
-.elemkepe{
-    width: 30%;
-    height: 90%;
+h1{
+    margin: auto;
+    text-align: center;
 }
-.megrendel{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    border-top: 2px solid rgb(112, 33, 33);
-    
-    
-    
-}
-.elemneve{
-    font-size: 50px;
-}
-.leiras{
-    display: flex;
-    flex-direction: column;
-}
-.elemszoveg{
-    padding-top: 0%;
-    margin-top: 10px;
-    width: 60%;
-    border-top:4px ;
-    border-bottom: 4px;
-    border-left: 0;
-    border-right: 0;
-    border-style:groove;
-    padding: 15px 0;
-}
-.elemneve{
-    margin: 0%;
-}
-.elemara{
-    font-size: 25px;
-}
-.megrendelgomb{
+.rolunkszoveg{
     width: 40%;
-    margin-left: 0%;
-    height: 80px;
-    border-radius: 0%;
-    border-color: red;
-    font-family: "Bebas Neue";
-    font-size: 20px;
-    border-radius: 25px;
-    cursor: pointer;
-
+    margin:auto;
+    margin-top: 5%;
+    text-align: center;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
 }
-.megrendelgomb:hover{
-    background-color: #D9D9D9;
-    opacity: 0.9;
-    transition: 0.4s;
-
+.tortenetdiv{
+    margin-top: 15%;
 }
-.kerekecskegombocska{
-    border-radius: 0%;
-    border-color: black;
-    width: 40% ;
-    height: 115%;
-}
-.miau{
-    font-size: 23px;
-    font-family: "Bebas Neue";
-}
-.kosar{
-    width: 90%;
-    height: 80%;
-    padding-right: 0%;
-    padding-left: 100%;
-}
-
-.leiras{
-    width: 55%;
-    justify-content: center;
-    align-items: center;
-}
-#image{
-    width: inherit;
-}
-.megrendelkep{
-    width: 100%;
-
-}
-
 
 table{
     display: flex;
@@ -195,3 +119,4 @@ th{
 tr,th{
     padding: 20px 50px;
 }
+
