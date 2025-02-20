@@ -54,15 +54,46 @@ nav img{
     width: 80px;
 }
 .hambimenu{
-    display: block;
+    display: none;
+   width: 40px; 
+   height: 60px;
+   position: absolute;
+   cursor: pointer;
+   right: 15px;
+
+   
 }
-.hambimenu span{
-    width: 20%;
+.line{
+    position: absolute;
+    height: 6px;
+    width: 100%;
+    background: white;
+    transition: 0.5s;
    
 
 }
+.line:nth-child(1) { top: 12px; }
+.line:nth-child(2) { top: 24px; }
+.line:nth-child(3) { top: 36px; }
 
-
+.hambimenumain{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+    width: 30%;
+    height: 40%;
+    background-color: grey;
+    right: 0;
+    top: 95px;
+    position: absolute;
+}
+.hambimenumain a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.7rem;
+    margin-top: 15px;
+}
 /*Main content*/
 
 .mainkeret{
@@ -126,4 +157,18 @@ th{
 tr,th{
     padding: 20px 50px;
 }
+
+
+@media only  screen and (max-width: 953px){
+    nav a{
+        display: none;
+    }
+    .hambimenu{
+        display: flex;
+        flex-direction: row;
+    }
+
+}
+    
+
 

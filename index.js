@@ -1,3 +1,10 @@
+const hambimenu=document.getElementsByClassName('hambimenu')
+function hambimenu(){
+
+}
+
+
+
 function openImagePage() {
     // The path to the image, and any text you want to pass
     const kep = "./kepek/ball.jpg";  // Path to the image
@@ -71,6 +78,74 @@ function openImagePage6() {
     // Navigate to the new page
     window.location.href = url;
 }
+
+function openImagePage7() {
+    // The path to the image, and any text you want to pass
+    const kep = "./kepek/campus.webp";  // Path to the image
+    const szoveg = "Véééééégre2";  // Some text to pass
+
+    // Create the URL for the second page (megrendel.html)
+    const url = `megrendel.html?image=${encodeURIComponent(kep)}&text=${encodeURIComponent(szoveg)}`;
+
+    // Navigate to the new page
+    window.location.href = url;
+}
+function openImagePage8() {
+    // The path to the image, and any text you want to pass
+    const kep = "./kepek/campus.webp";  // Path to the image
+    const szoveg = "Véééééégre2";  // Some text to pass
+
+    // Create the URL for the second page (megrendel.html)
+    const url = `megrendel.html?image=${encodeURIComponent(kep)}&text=${encodeURIComponent(szoveg)}`;
+
+    // Navigate to the new page
+    window.location.href = url;
+}
+function openImagePage9() {
+    // The path to the image, and any text you want to pass
+    const kep = "./kepek/campus.webp";  // Path to the image
+    const szoveg = "Véééééégre2";  // Some text to pass
+
+    // Create the URL for the second page (megrendel.html)
+    const url = `megrendel.html?image=${encodeURIComponent(kep)}&text=${encodeURIComponent(szoveg)}`;
+
+    // Navigate to the new page
+    window.location.href = url;
+}
+function openImagePage10() {
+    // The path to the image, and any text you want to pass
+    const kep = "./kepek/campus.webp";  // Path to the image
+    const szoveg = "Véééééégre2";  // Some text to pass
+
+    // Create the URL for the second page (megrendel.html)
+    const url = `megrendel.html?image=${encodeURIComponent(kep)}&text=${encodeURIComponent(szoveg)}`;
+
+    // Navigate to the new page
+    window.location.href = url;
+}
+function openImagePage11() {
+    // The path to the image, and any text you want to pass
+    const kep = "./kepek/campus.webp";  // Path to the image
+    const szoveg = "Véééééégre2";  // Some text to pass
+
+    // Create the URL for the second page (megrendel.html)
+    const url = `megrendel.html?image=${encodeURIComponent(kep)}&text=${encodeURIComponent(szoveg)}`;
+
+    // Navigate to the new page
+    window.location.href = url;
+}
+function openImagePage12() {
+    // The path to the image, and any text you want to pass
+    const kep = "./kepek/campus.webp";  // Path to the image
+    const szoveg = "Véééééégre2";  // Some text to pass
+
+    // Create the URL for the second page (megrendel.html)
+    const url = `megrendel.html?image=${encodeURIComponent(kep)}&text=${encodeURIComponent(szoveg)}`;
+
+    // Navigate to the new page
+    window.location.href = url;
+}
+
 
 
 
