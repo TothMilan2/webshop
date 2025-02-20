@@ -34,7 +34,7 @@ nav a{
     color: white;
     font-family: Rapfont;
     font-size: 2.4rem;
-    margin: 50px;
+
     margin-bottom: 0;
 
     
@@ -44,7 +44,7 @@ nav{
     align-items: center;
     justify-content: space-between;
     color: white;
-    width: 100%;
+    width: 50%;
 
     
 }
