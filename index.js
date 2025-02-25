@@ -143,11 +143,11 @@ function openImagePage12() {
 }
 
 
-let hambi = document.querySelector('.navLinks');
-let hamburgerMenu = document.querySelector('.hambimenumain');
+const hambi = document.querySelector('.hambimenu');
+const hamburgerMenu = document.querySelector('.hambimenumain');
 
-hamburgerMenu.addEventListener('click', () => {
-    navLinks.classList.toggle('open');
+hambi.addEventListener('click', () => {
+    hamburgerMenu.classList.toggle('active');
   });
 
 

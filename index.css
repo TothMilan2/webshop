@@ -2,6 +2,9 @@
     font-family: "Rapfont";
     src: url("Timegoing\ Regular.ttf");
   }
+html{
+    overflow-x: hidden;
+}
 body{
     height: 100%;
     width: 100%;
@@ -77,16 +80,18 @@ nav img{
 .line:nth-child(3) { top: 36px; }
 
 .hambimenumain{
-    display: none;
+    display: flex;
     flex-direction: column;
     text-align: center;
     gap: 30px;
     width: 20%;
     height: 40%;
     background-color: grey;
-    right: 0;
+    right: -20%;
     top: 19%;
     position: absolute;
+   
+   
 }
 .hambimenumain a{
     text-decoration: none;
@@ -170,6 +175,20 @@ tr,th{
     .hambimenu{
         display: flex;
         flex-direction: row;
+    }
+    .hambimenumain.active{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+        width: 20%;
+        height: 40%;
+        background-color: grey;
+        right: 0;
+        top: 19%;
+        position: absolute;
+        transition: 0.4s;
+  
     }
 
 }
