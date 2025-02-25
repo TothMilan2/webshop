@@ -31,5 +31,13 @@ if (tex2t) {
 
 
 
+const hambi = document.querySelector('.hambimenu');
+const hamburgerMenu = document.querySelector('.hambimenumain');
+
+hambi.addEventListener('click', () => {
+    hamburgerMenu.classList.toggle('active');
+  });
+
+
 
 

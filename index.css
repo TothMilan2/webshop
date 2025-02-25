@@ -186,6 +186,9 @@ tr,th{
         transition: 0.4s;
   
     }
+    .hambimenumain img{
+        width: 30%;
+    }
 
 }
     
