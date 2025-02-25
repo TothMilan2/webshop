@@ -155,6 +155,8 @@ table{
     width: 100%;
     height: 100%;
     gap: 50%;
+    font-family: "Rapfont";
+    src: url("Timegoing\ Regular.ttf");
 }
 th{
     text-decoration: underline;
