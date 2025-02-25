@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Rapfont";
-    src: url("BronxBystreets-aDqK.ttf");
+    src: url("Timegoing\ Regular.ttf");
   }
 body{
     height: 100%;
@@ -121,12 +121,17 @@ nav a:hover{
     border-right: 0;
     border-style:groove;
     padding: 15px 0;
+
 }
 .elemneve{
     margin: 0%;
+    font-family: "Rapfont";
+    src: url("Timegoing\ Regular.ttf");
 }
 .elemara{
     font-size: 25px;
+    font-family: "Rapfont";
+    src: url("Timegoing\ Regular.ttf");
 }
 .megrendelgomb{
     width: 40%;
@@ -138,6 +143,8 @@ nav a:hover{
     font-size: 20px;
     border-radius: 25px;
     cursor: pointer;
+    font-family: "Rapfont";
+    src: url("Timegoing\ Regular.ttf");
 
 }
 .megrendelgomb:hover{
@@ -194,4 +201,8 @@ th{
 }
 tr,th{
     padding: 20px 50px;
+}
+.megrendel h1{
+    font-family: "Rapfont";
+    src: url("Timegoing\ Regular.ttf");
 }

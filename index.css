@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Rapfont";
-    src: url("BronxBystreets-aDqK.ttf");
+    src: url("Timegoing\ Regular.ttf");
   }
 body{
     height: 100%;
@@ -156,6 +156,10 @@ th{
 }
 tr,th{
     padding: 20px 50px;
+}
+.shop h1{
+    font-family: "Rapfont";
+    src: url("Timegoing\ Regular.ttf");
 }
 
 
