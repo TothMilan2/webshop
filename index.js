@@ -1,7 +1,3 @@
-const hambimenu=document.getElementsByClassName('hambimenu')
-function hambimenu(){
-
-}
 
 
 
@@ -146,6 +142,13 @@ function openImagePage12() {
     window.location.href = url;
 }
 
+
+let hambi = document.querySelector('.navLinks');
+let hamburgerMenu = document.querySelector('.hambimenumain');
+
+hamburgerMenu.addEventListener('click', () => {
+    navLinks.classList.toggle('open');
+  });
 
 
 
