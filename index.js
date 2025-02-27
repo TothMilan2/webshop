@@ -145,16 +145,25 @@ function openImagePage12() {
 
 const hambi = document.querySelector('.hambimenu');
 const hamburgerMenu = document.querySelector('.hambimenumain');
+const hamburgerMenuLink = document.querySelector('.navlink');
+const hamburgerMenuImg = document.querySelector('.navkep'); 
 
 hambi.addEventListener('click', () => {
     hamburgerMenu.classList.toggle('active');
-
+    hambi.classList.toggle('active')
+    hamburgerMenuImg.classList.toggle('active')
+    hamburgerMenuLink.classList.toggle('active')
+    hamburgerMenuLink.forEach(link => {
+        links.classList.toggle('active'); // This will change the color of all links when the menu is opened
+    })
   });
 
   hambi.addEventListener("click", function(event) {
     // Check if click was outside the menu or hamburger
     if (!hamburgerMenu.contains(event.target) && event.target !== hambi) {
         hamburgerMenu.classList.remove("active");
+        hambi.classList.remove('active')
+        
     }});
 
 
