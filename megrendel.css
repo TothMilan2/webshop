@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Rapfont";
-    src: url("Timegoing\ Regular.ttf");
+    src: url("BronxBystreets-aDqK.ttf");
   }
 body{
     height: 100%;
@@ -84,7 +84,49 @@ nav a:hover{
 
 }
 
+.hambimenu{
+    display: none;
+   width: 40px; 
+   height: 60px;
+   position: absolute;
+   cursor: pointer;
+   right: 15px;
 
+   
+}
+.line{
+    position: absolute;
+    height: 6px;
+    width: 100%;
+    background: white;
+    transition: 0.5s;
+   
+
+}
+.line:nth-child(1) { top: 12px; }
+.line:nth-child(2) { top: 24px; }
+.line:nth-child(3) { top: 36px; }
+
+.hambimenumain{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+    width: 20%;
+    height: 40%;
+    background-color: grey;
+    right: -20%;
+    top: 19%;
+    position: absolute;
+   
+   
+}
+.hambimenumain a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.7rem;
+    margin-top: 15px;
+}
 
 
 
@@ -121,17 +163,12 @@ nav a:hover{
     border-right: 0;
     border-style:groove;
     padding: 15px 0;
-
 }
 .elemneve{
     margin: 0%;
-    font-family: "Rapfont";
-    src: url("Timegoing\ Regular.ttf");
 }
 .elemara{
     font-size: 25px;
-    font-family: "Rapfont";
-    src: url("Timegoing\ Regular.ttf");
 }
 .megrendelgomb{
     width: 40%;
@@ -143,8 +180,6 @@ nav a:hover{
     font-size: 20px;
     border-radius: 25px;
     cursor: pointer;
-    font-family: "Rapfont";
-    src: url("Timegoing\ Regular.ttf");
 
 }
 .megrendelgomb:hover{
@@ -202,7 +237,47 @@ th{
 tr,th{
     padding: 20px 50px;
 }
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 202d8c51b0b644603c807a88e4237107b300caed
+
+
+
+@media only  screen and (max-width: 953px){
+    nav a{
+        display: none;
+    }
+    .hambimenu{
+        display: flex;
+        flex-direction: row;
+    }
+    .hambimenumain.active{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+        width: 20%;
+        height: 40%;
+        background-color: grey;
+        right: 0;
+        top: 19%;
+        position: absolute;
+        transition: 0.4s;
+  
+    }
+    .hambimenumain img{
+        width: 30%;
+    }
+
+<<<<<<< HEAD
+}
+=======
 .megrendel h1{
     font-family: "Rapfont";
     src: url("Timegoing\ Regular.ttf");
 }
+>>>>>>> 47d94e80f25cbff75a85014537208ce2f89007d3
+=======
+}
+>>>>>>> 202d8c51b0b644603c807a88e4237107b300caed

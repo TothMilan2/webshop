@@ -70,3 +70,46 @@ nav img{
     font-family: Rapfont;
 
 }
+.hambimenu{
+    display: none;
+   width: 40px; 
+   height: 60px;
+   position: absolute;
+   cursor: pointer;
+   right: 15px;
+
+   
+}
+.line{
+    position: absolute;
+    height: 6px;
+    width: 100%;
+    background: white;
+    transition: 0.5s;
+   
+
+}
+.line:nth-child(1) { top: 12px; }
+.line:nth-child(2) { top: 24px; }
+.line:nth-child(3) { top: 36px; }
+
+.hambimenumain{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+    width: 20%;
+    height: 40%;
+    background-color: grey;
+    right: -20%;
+    top: 19%;
+    position: absolute;
+   
+   
+}
+.hambimenumain a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.7rem;
+    margin-top: 15px;
+}
