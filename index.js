@@ -3,7 +3,7 @@
 
 function openImagePage() {
     // The path to the image, and any text you want to pass
-    const kep = "./kepek/ball.jpg";  // Path to the image
+    const kep = "./kepek/dcshoes.jpeg";  // Path to the image
     const szoveg = "Kosárlabda";
     const szoveg2 = "20000Ft";  // Some text to pass
 
@@ -16,7 +16,7 @@ function openImagePage() {
 
 function openImagePage2() {
     // The path to the image, and any text you want to pass
-    const kep = "./kepek/campus.webp";  // Path to the image
+    const kep = "./kepek/vans.jpg";  // Path to the image
     const szoveg = "Cipő";
     const szoveg2 = "20000Ft";  // Some text to pass
 
@@ -29,7 +29,7 @@ function openImagePage2() {
 
 function openImagePage3() {
     // The path to the image, and any text you want to pass
-    const kep = "./kepek/af1.jpg";  // Path to the image
+    const kep = "./kepek/nikesbkek.jpg";  // Path to the image
     const szoveg = "Véééééégre2";  // Some text to pass
 
     // Create the URL for the second page (megrendel.html)
