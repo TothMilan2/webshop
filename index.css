@@ -169,6 +169,7 @@ tr,th{
 .shop h1{
     font-family: "Rapfont";
     src: url("Timegoing\ Regular.ttf");
+    margin-top: 15px;
 }
 
 
@@ -210,14 +211,40 @@ tr,th{
 
 }
 .sbkep{
-    width: 45%;
+    width: 100%;
+    margin-top: 50px
+    
+    
 }
 .dcshoes{
-    width: 67%;
-
+    width: 100%;
+    margin-left: none;
+    margin-top: 40px;
+    
+    
+    
 }
 .vans{
-    width: 70%;
+    width: 120%;
+    margin-top: 34px;
+    
+}
+.newbalance{
+    width: 100%;
+    margin-top: 30px;
+    
+}
+.shop{
+    width: 110%;
+    
+}
+.in_shop{
+    height: 180px;
+    margin-top: 0;
+}
+.kep{
+    width: 95%;
+    margin-left: 5%;
 }
 
     
