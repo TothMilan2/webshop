@@ -110,16 +110,18 @@ nav a:hover{
 
 .hambimenumain{
     display: flex;
-    flex-direction: column;
-    text-align: center;
-    gap: 30px;
-    width: 20%;
-    height: 40%;
-    background-color: grey;
-    right: -20%;
-    top: 19%;
-    position: absolute;
-   
+        flex-direction: column;
+        text-align: center;
+        gap: 80px;
+        width: 30%;
+        height: 60%;
+        background-color: grey;
+        right: -100%;
+        top: 21%;
+        position: absolute;
+        transition: 0.4s;
+        opacity: 1;
+        border-radius: 0px;
    
 }
 .hambimenumain a{
@@ -127,8 +129,8 @@ nav a:hover{
     color: white;
     font-size: 1.7rem;
     margin-top: 15px;
-}
 
+}
 
 
 
@@ -250,25 +252,42 @@ tr,th{
         display: flex;
         flex-direction: row;
     }
+    .navlink.active{
+        display: block;
+    }
+    .hambimenumain .navkep.active{
+        display: block;
+    }
     .hambimenumain.active{
         display: flex;
         flex-direction: column;
         text-align: center;
-        gap: 30px;
-        width: 20%;
-        height: 40%;
+        gap: 80px;
+        width: 30%;
+        height: 60%;
         background-color: grey;
         right: 0;
-        top: 19%;
+        top: 169px;
         position: absolute;
         transition: 0.4s;
+        opacity: 1;
+        border-radius: 0px;
   
     }
     .hambimenumain img{
         width: 30%;
     }
-
-
+    .hambimenu.active :nth-child(1){
+            rotate: 45deg;
+            transform: translateY(8px);
+    }
+    .hambimenu.active :nth-child(2){
+        rotate: -45deg;
+        transform: translateY(-10px);
+    }
+    .hambimenu.active :nth-child(3){
+        opacity: 0;
+    }
 }
 
 .megrendel h1{

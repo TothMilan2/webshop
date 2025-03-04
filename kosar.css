@@ -6,6 +6,7 @@ body{
     height: 100%;
     width: 100%;
     margin: 0;
+    overflow-x: hidden;
 
 }
 
@@ -52,24 +53,7 @@ nav img{
     float: right;
     width: 80px;
 }
-.hambimenu{
-    display: block;
-}
-.hambimenu span{
-    width: 20%;
-   
 
-}
-#cimlink{
-    margin-left: -30px;
-    font-size: 1.9rem;
-    width: fit-content;
-    cursor: pointer;
-    text-decoration: none;
-    color: white;
-    font-family: Rapfont;
-
-}
 .hambimenu{
     display: none;
    width: 40px; 
@@ -95,16 +79,18 @@ nav img{
 
 .hambimenumain{
     display: flex;
-    flex-direction: column;
-    text-align: center;
-    gap: 30px;
-    width: 20%;
-    height: 40%;
-    background-color: grey;
-    right: -20%;
-    top: 19%;
-    position: absolute;
-   
+        flex-direction: column;
+        text-align: center;
+        gap: 80px;
+        width: 30%;
+        height: 60%;
+        background-color: grey;
+        right: -100%;
+        top: 21%;
+        position: absolute;
+        transition: 0.4s;
+        opacity: 1;
+        border-radius: 0px;
    
 }
 .hambimenumain a{
@@ -112,4 +98,65 @@ nav img{
     color: white;
     font-size: 1.7rem;
     margin-top: 15px;
+
+}
+
+
+#cimlink{
+    margin-left: -30px;
+    font-size: 1.9rem;
+    width: fit-content;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    font-family: Rapfont;
+
+}
+
+
+
+@media only  screen and (max-width: 953px){
+    nav a{
+        display: none;
+    }
+    .hambimenu{
+        display: flex;
+        flex-direction: row;
+    }
+    .navlink.active{
+        display: block;
+    }
+    .hambimenumain .navkep.active{
+        display: block;
+    }
+    .hambimenumain.active{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 80px;
+        width: 30%;
+        height: 60%;
+        background-color: grey;
+        right: 0;
+        top: 169px;
+        position: absolute;
+        transition: 0.4s;
+        opacity: 1;
+        border-radius: 0px;
+  
+    }
+    .hambimenumain img{
+        width: 30%;
+    }
+    .hambimenu.active :nth-child(1){
+            rotate: 45deg;
+            transform: translateY(8px);
+    }
+    .hambimenu.active :nth-child(2){
+        rotate: -45deg;
+        transform: translateY(-10px);
+    }
+    .hambimenu.active :nth-child(3){
+        opacity: 0;
+    }
 }
