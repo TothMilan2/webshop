@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Rapfont";
-    src: url("BronxBystreets-aDqK.ttf");
+    src: url("Timegoing\ Regular.ttf");
   }
 body{
     height: 100%;
@@ -22,6 +22,7 @@ header{
     border-bottom: 10%;
     border: pink;
     gap: 50px;    
+    
     
 }
 nav{

@@ -53,8 +53,8 @@ function openImagePage4() {
 
 function openImagePage5() {
     // The path to the image, and any text you want to pass
-    const kep = "./kepek/campus.webp";  // Path to the image
-    const szoveg = "Véééééégre2";  // Some text to pass
+    const kep = "./kepek/wuwear.jpg";  // Path to the image
+    const szoveg = "WU Wear - Wu Tang Clan Póló";  // Some text to pass
 
     // Create the URL for the second page (megrendel.html)
     const url = `megrendel.html?image=${encodeURIComponent(kep)}&text=${encodeURIComponent(szoveg)}`;
@@ -65,8 +65,8 @@ function openImagePage5() {
 
 function openImagePage6() {
     // The path to the image, and any text you want to pass
-    const kep = "./kepek/campus.webp";  // Path to the image
-    const szoveg = "Véééééégre2";  // Some text to pass
+    const kep = "./kepek/nikevintage.webp";  // Path to the image
+    const szoveg = "Nike vintage ";  // Some text to pass
 
     // Create the URL for the second page (megrendel.html)
     const url = `megrendel.html?image=${encodeURIComponent(kep)}&text=${encodeURIComponent(szoveg)}`;
@@ -77,8 +77,8 @@ function openImagePage6() {
 
 function openImagePage7() {
     // The path to the image, and any text you want to pass
-    const kep = "./kepek/campus.webp";  // Path to the image
-    const szoveg = "Véééééégre2";  // Some text to pass
+    const kep = "./kepek/NBA.webp";  // Path to the image
+    const szoveg = "NBA Los Angeles Lakers-Lebron James";  // Some text to pass
 
     // Create the URL for the second page (megrendel.html)
     const url = `megrendel.html?image=${encodeURIComponent(kep)}&text=${encodeURIComponent(szoveg)}`;
@@ -88,8 +88,8 @@ function openImagePage7() {
 }
 function openImagePage8() {
     // The path to the image, and any text you want to pass
-    const kep = "./kepek/campus.webp";  // Path to the image
-    const szoveg = "Véééééégre2";  // Some text to pass
+    const kep = "./kepek/newera.webp";  // Path to the image
+    const szoveg = "New Era Fullcap";  // Some text to pass
 
     // Create the URL for the second page (megrendel.html)
     const url = `megrendel.html?image=${encodeURIComponent(kep)}&text=${encodeURIComponent(szoveg)}`;

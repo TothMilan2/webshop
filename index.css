@@ -137,6 +137,7 @@ nav img{
     text-align: center;
     margin: 5% 5%;
     margin-right: 0;
+    
    
     
 }
@@ -249,6 +250,7 @@ tr,th{
 }
 .shop{
     width: 110%;
+    margin-bottom: 5%;
     
 }
 .in_shop{
@@ -259,6 +261,32 @@ tr,th{
     width: 95%;
     margin-left: 5%;
 }
+.wuwear{
+    width: 75%;
+    margin-bottom: 20%;
+    margin-left: none;
+    margin-right: none;
+
+}
+.nikevintage{
+    width: 80%;
+    margin-left: none;
+}
+.NBA{
+    width: 70%;
+    margin-left: none;
+}
+.newera{
+    width: 70%;
+}
+.kep{
+    margin-left: none;
+    margin: none;
+}
+
+
+
+
 
     
 
