@@ -21,7 +21,7 @@ hambi.addEventListener("click", function(event) {
 
     window.addEventListener('DOMContentLoaded', function() {
         // Retrieve the image URL from sessionStorage
-        var imageUrl = sessionStorage.getItem('megrendelkep');
+        var imageUrl = sessionStorage.getItem('megrendelkep2');
         
         // If there's an image URL stored in sessionStorage, set it to the img tag
         if (imageUrl) {

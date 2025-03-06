@@ -40,15 +40,26 @@ hambi.addEventListener('click', () => {
 
   document.addEventListener('DOMContentLoaded', function() {
     // Get the add to cart button
-    var addToCartButton = document.getElementsByClassName('megrendelgomb');
+    console.log('DOM fully loaded');
+    var gomb = document.getElementsByClassName('megrendelgomb')
+    console.log('Button:', gomb); // Log to check if the button is found;
     
+    if (gomb) {
+      gomb.addEventListener('click', function() {
+          console.log('Button clicked');
+          alert('Button clicked!');
+      });
+  } else {
+      console.error('Add to Cart button not found!');
+  }
     // When the button is clicked
     addToCartButton.addEventListener('click', function() {
         // Get the image source URL
+        console.log('Button clicked');
         var imageUrl = document.getElementsByClassName('megrendelkep').src;
         
         // Store the image URL in sessionStorage
-        sessionStorage.setItem('megrendelkep', imageUrl);
+        sessionStorage.setItem('megrendelkep2', imageUrl);
         
         // Redirect to kosar.html
         window.location.href = 'kosar.html';
