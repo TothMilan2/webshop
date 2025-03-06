@@ -24,11 +24,10 @@ if (text) {
   // Set the image source from the query parameter
   document.getElementById('text').textContent = text;
 }
-if (tex2t) {
+if (text2) {
   // Set the image source from the query parameter
   document.getElementById('elemara').textContent = text;
 }
-
 
 
 const hambi = document.querySelector('.hambimenu');
@@ -39,5 +38,19 @@ hambi.addEventListener('click', () => {
   });
 
 
-
-
+  document.addEventListener('DOMContentLoaded', function() {
+    // Get the add to cart button
+    var addToCartButton = document.getElementsByClassName('megrendelgomb');
+    
+    // When the button is clicked
+    addToCartButton.addEventListener('click', function() {
+        // Get the image source URL
+        var imageUrl = document.getElementsByClassName('megrendelkep').src;
+        
+        // Store the image URL in sessionStorage
+        sessionStorage.setItem('megrendelkep', imageUrl);
+        
+        // Redirect to kosar.html
+        window.location.href = 'kosar.html';
+    });
+});
