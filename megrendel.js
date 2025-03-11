@@ -38,30 +38,61 @@ hambi.addEventListener('click', () => {
   });
 
 
-  document.addEventListener('DOMContentLoaded', function() {
-    // Get the add to cart button
-    console.log('DOM fully loaded');
-    var gomb = document.getElementsByClassName('megrendelgomb')
-    console.log('Button:', gomb); // Log to check if the button is found;
-    
-    if (gomb) {
-      gomb.addEventListener('click', function() {
-          console.log('Button clicked');
-          alert('Button clicked!');
-      });
-  } else {
-      console.error('Add to Cart button not found!');
-  }
-    // When the button is clicked
-    addToCartButton.addEventListener('click', function() {
-        // Get the image source URL
-        console.log('Button clicked');
-        var imageUrl = document.getElementsByClassName('megrendelkep').src;
-        
-        // Store the image URL in sessionStorage
-        sessionStorage.setItem('megrendelkep2', imageUrl);
-        
-        // Redirect to kosar.html
-        window.location.href = 'kosar.html';
-    });
+  
+
+
+
+
+  let gomb = document.getElementsByClassName('megrendelgomb')[0];
+
+gomb.addEventListener('click', () => {
+    let cipoKep = document.getElementsByClassName('.megrendelkep');
+    let ciponev = cipoKep ? document.getElementById('text').innerText : "Nem található cipő";
+
+    // Kosár cuccok kezeléséhez sessionStorage-t használunk
+    let KosarCuccok = JSON.parse(sessionStorage.getItem('kosar')) || [];
+    KosarCuccok.push(ciponev);
+    sessionStorage.setItem('kosar', JSON.stringify(KosarCuccok));
+
+    // Kosár frissítése
+    kosarbarak(ciponev);
+    window.location.href = "kosar.html";
 });
+
+if (window.location.pathname.includes("kosar.html")) {
+    kosarmutat();
+
+    // Kosár ürítés gombja
+    document.getElementById("KosarUrit").addEventListener("click", function () {
+        sessionStorage.removeItem("kosar");
+        kosarmutat();
+    });
+
+    // Megrendelés gomb eseménykezelése
+    document.getElementById("megrendelButton").addEventListener("click", function () {
+        let mennyiseg = document.getElementById("quantity").value;
+        if (mennyiseg && mennyiseg > 0) {
+            alert(`Megrendelve ${mennyiseg} darab termék!`);
+            // További megrendelési logika ide
+        } else {
+            alert("Kérlek válassz mennyiséget!");
+        }
+    });
+}
+
+// Kosár megjelenítése
+function kosarmutat() {
+    let KosarCuccok = JSON.parse(sessionStorage.getItem('kosar')) || [];
+    let cartContainer = document.querySelector(".box");
+    
+    if (KosarCuccok.length === 0) {
+        cartContainer.innerHTML = "<p>A kosarad üres.</p>";
+    } else {
+        cartContainer.innerHTML = "<ul>" + KosarCuccok.map(item => `<li>${item}</li>`).join("") + "</ul>";
+    }
+}
+
+function kosarbarak(ciponev) {
+    // Itt lehet a kosárban tárolt cipőt kezelni, ha szükséges
+    console.log("Cipő a kosárba: " + ciponev);
+}

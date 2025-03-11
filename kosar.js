@@ -19,15 +19,24 @@ hambi.addEventListener("click", function(event) {
     }});
 
 
-    window.addEventListener('DOMContentLoaded', function() {
-        // Retrieve the image URL from sessionStorage
-        var imageUrl = sessionStorage.getItem('megrendelkep2');
+
+   
+    
+    // Kosár megjelenítése
+    function kosarmutat() {
+        let KosarCuccok = JSON.parse(sessionStorage.getItem('kosar')) || [];
+        let cartContainer = document.querySelector(".box");
         
-        // If there's an image URL stored in sessionStorage, set it to the img tag
-        if (imageUrl) {
-            document.getElementById('kosarkepecske').src = imageUrl;
+        if (KosarCuccok.length === 0) {
+            cartContainer.innerHTML = "<p>A kosarad üres.</p>";
         } else {
-            // If there's no image URL in sessionStorage, alert or handle the case
-            alert('No image found in the cart.');
+            cartContainer.innerHTML = "<ul>" + KosarCuccok.map(item => `<li>${item}</li>`).join("") + "</ul>";
         }
-    });
+    }
+    
+    function kosarbarak(ciponev) {
+        // Itt lehet a kosárban tárolt cipőt kezelni, ha szükséges
+        console.log("Cipő a kosárba: " + ciponev);
+    }
+
+    
