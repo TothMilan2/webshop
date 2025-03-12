@@ -19,7 +19,7 @@ header{
     flex-direction: row;
     justify-content: left;
     align-items: center;
-    gap: 20%;
+    gap: 30%;
     padding-left: 30px;
     background-image: url(./kepek/rap.jpg);
     
@@ -55,7 +55,9 @@ nav{
 nav img{
     float: right;
     width: 80px;
+    cursor: pointer;
 }
+
 .hambimenu{
     display: none;
    width: 40px; 
@@ -85,14 +87,17 @@ nav img{
         text-align: center;
         gap: 80px;
         width: 30%;
-        height: 60%;
+        height: 40%;
         background-color: grey;
         right: -100%;
-        top: 21%;
+        top: 169px;
         position: absolute;
         transition: 0.4s;
         opacity: 1;
-        border-radius: 0px;
+        border-top-left-radius: 100px;
+        border-bottom-left-radius: 100px;
+        padding-top: 10%;
+
    
 }
 .hambimenumain a{
@@ -101,6 +106,26 @@ nav img{
     font-size: 1.7rem;
     margin-top: 15px;
 
+}
+/*Shopping Cart*/
+.sidecart{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 80px;
+        width: 25%;
+        height: 80%;
+        background-color: grey;
+        right: -100%;
+        top: 169px;
+        position: absolute;
+        transition: 0.4s;
+        opacity: 1;
+        border-top-left-radius: 100px;
+        border-bottom-left-radius: 100px;
+        
+       
+   
 }
 
 
@@ -141,7 +166,7 @@ nav img{
     
 }
 #cimlink{
-    margin-left: -30px;
+    margin-left: -1px;
     font-size: 1.9rem;
     width: fit-content;
     cursor: pointer;
@@ -197,14 +222,17 @@ tr,th{
         text-align: center;
         gap: 80px;
         width: 30%;
-        height: 60%;
+        height: 40%;
         background-color: grey;
         right: 0;
         top: 169px;
         position: absolute;
         transition: 0.4s;
         opacity: 1;
-        border-radius: 0px;
+        border-top-left-radius: 80px;
+        border-bottom-left-radius: 100px;
+        padding-top: 10%;
+
   
     }
     .hambimenumain img{
@@ -222,6 +250,23 @@ tr,th{
         opacity: 0;
     }
 
+    
+}
+.sidecart.active{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 80px;
+    width: 35%;
+    height: 80%;
+    background-color: grey;
+    right: 0;
+    top: 169px;
+    position: absolute;
+    transition: 0.4s;
+    opacity: 1;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
 }
 .sbkep{
     width: 100%;
@@ -296,7 +341,10 @@ tr,th{
     width: 47%;
 }
 
+.navkep2{
 
+    cursor: pointer;
+}
 
 
     

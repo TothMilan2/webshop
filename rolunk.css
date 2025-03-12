@@ -16,16 +16,11 @@ header{
     height: 169px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: left;
     align-items: center;
+    gap: 30%;
+    padding-left: 30px;
     background-image: url(./kepek/rap.jpg);
-    background-position: 10%;
-    background-repeat: no-repeat;
-    background-size: 120%;
-    border-bottom: 10%;
-    border: pink;
-    gap: 50px;    
-    margin-bottom: 10%;
 }
 nav{
     display: flex;
@@ -136,7 +131,7 @@ h1{
     border-top: 1px solid;
     border-bottom: 1px solid;
 }
-.tortenetdiv{
+.tortenetdiv,.rolunkdiv{
     margin-top: 15%;
 }
 

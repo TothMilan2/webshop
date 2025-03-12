@@ -13,16 +13,11 @@ header{
     height: 20%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: left;
     align-items: center;
+    gap: 20%;
+    padding-left: 30px;
     background-image: url(./kepek/rap.jpg);
-    background-position: 10%;
-    background-repeat: no-repeat;
-    background-size: 120%;
-    border-bottom: 10%;
-    border: pink;
-    gap: 50px;    
-    
     
 }
 nav{

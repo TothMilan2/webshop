@@ -22,21 +22,4 @@ hambi.addEventListener("click", function(event) {
 
    
     
-    // Kosár megjelenítése
-    function kosarmutat() {
-        let KosarCuccok = JSON.parse(sessionStorage.getItem('kosar')) || [];
-        let cartContainer = document.querySelector(".box");
-        
-        if (KosarCuccok.length === 0) {
-            cartContainer.innerHTML = "<p>A kosarad üres.</p>";
-        } else {
-            cartContainer.innerHTML = "<ul>" + KosarCuccok.map(item => `<li>${item}</li>`).join("") + "</ul>";
-        }
-    }
-    
-    function kosarbarak(ciponev) {
-        // Itt lehet a kosárban tárolt cipőt kezelni, ha szükséges
-        console.log("Cipő a kosárba: " + ciponev);
-    }
-
-    
+  
