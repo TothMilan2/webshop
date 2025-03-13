@@ -222,7 +222,7 @@ tr,th{
         text-align: center;
         gap: 80px;
         width: 30%;
-        height: 40%;
+        height: 50%;
         background-color: grey;
         right: 0;
         top: 169px;
@@ -345,7 +345,12 @@ tr,th{
 
     cursor: pointer;
 }
-
+.szovegakepalatt{
+    margin: auto;
+    margin-top: 12px;
+    width: 50%;
+  
+}
 
     
 

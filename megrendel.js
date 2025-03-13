@@ -33,43 +33,86 @@ if (text2) {
 const hambi = document.querySelector('.hambimenu');
 const hamburgerMenu = document.querySelector('.hambimenumain');
 
-hambi.addEventListener('click', () => {
-    hamburgerMenu.classList.toggle('active');
-  });
 
 
-  
 
-if(document.readyState=="loading"){
-    document.addEventListener('DOMContentLoaded',ready)
-}else{
-    ready()
-}
-function ready(){
-    var addToCartButton=document.getElementsByClassName('megrendelgomb')
-    for(var i =0; i< addToCartButton.length;i++){
-        var button=addToCartButton[i]
-        button.addEventListener('click', addToCartClicked
+
+ 
+
+
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const cartIcon = document.querySelector(".navkep");
+        const sideCart = document.querySelector(".sidecart");
+
+ 
         
-        )
-    }
-}
+        if (cartIcon) {
+            cartIcon.addEventListener("click", function () {
+                console.log("Cart icon clicked!");
+                if (sideCart) {
+                    sideCart.classList.toggle('active');
+   
+                    
+                    
+                }
+                else{
+                    console.error("Nincs meg a sideCART")
+                }
+                
+            });
+        } else {
+            console.error("Nem található a .carticon elem!");
+        }
+    });
+    const sideCart = document.querySelector(".sidecart");
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const cartIcon2 = document.querySelector(".navkep2");
+        
+ 
+        
+        if (cartIcon2) {
+            cartIcon2.addEventListener("click", function () {
+                console.log("Cart icon clicked!");
+                if (sideCart) {
+                    sideCart.classList.toggle('active');
+                    hamburgerMenu.classList.remove("active");
+                    hambi.classList.remove('active')
+                    
+                    
+                }
+                else{
+                    console.error("Nincs meg a sideCART")
+                }
+                
+            });
+        } else {
+            console.error("Nem található a .carticon elem!");
+        }
+    });
 
 
+    
+    hambi.addEventListener('click', () => {
+        if(!sideCart.classList.contains("active")){
+            hamburgerMenu.classList.toggle('active');
+            hambi.classList.toggle('active')
+        }
+        else{
+            hamburgerMenu.classList.toggle('active');
+            hambi.classList.toggle('active')
+            sideCart.classList.remove("active")
+        }
+        
+    
+       
+        })
 
-
-function addToCartClicked(event){
-    var button=event.target
-
-    var ShopItem=button.parentElement
-    var ciposzoveg=document.getElementById("text").innerHTML
-    var ar=document.getElementsByClassName('elemara')
-    var kep=document.getElementById("image")
-    console.log(ciposzoveg , ar, kep.src )
-    window.location.href = "kosar.html";
-    addItemToCart(ciposzoveg,kep)
-}
-
-function addItemToCart(ciposzoveg,kep){
-    var cartRow=document.createElement('div')
-}
+        hambi.addEventListener("click", function(event) {
+            // Check if click was outside the menu or hamburger
+            if (!hamburgerMenu.contains(event.target) && event.target !== hambi) {
+                hamburgerMenu.classList.remove("active");
+                hambi.classList.remove('active')
+                
+            }});
