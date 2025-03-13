@@ -28,6 +28,7 @@ nav{
     justify-content: space-between;
     color: white;
     width: 50%;
+    font-family: Rapfont;
    
 
 }
@@ -174,14 +175,16 @@ tr,th{
         text-align: center;
         gap: 80px;
         width: 30%;
-        height: 60%;
+        height: 50%;
         background-color: grey;
         right: 0;
         top: 169px;
         position: absolute;
         transition: 0.4s;
         opacity: 1;
-        border-radius: 0px;
+        border-top-left-radius: 80px;
+        border-bottom-left-radius: 100px;
+        padding-top: 10%;
   
     }
     .hambimenumain img{
@@ -198,4 +201,39 @@ tr,th{
     .hambimenu.active :nth-child(3){
         opacity: 0;
     }
+}
+.sidecart{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 80px;
+    width: 25%;
+    height: 80%;
+    background-color: grey;
+    right: -100%;
+    top: 169px;
+    position: absolute;
+    transition: 0.4s;
+    opacity: 1;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    
+   
+
+}
+.sidecart.active{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 80px;
+    width: 35%;
+    height: 80%;
+    background-color: grey;
+    right: 0;
+    top: 169px;
+    position: absolute;
+    transition: 0.4s;
+    opacity: 1;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
 }

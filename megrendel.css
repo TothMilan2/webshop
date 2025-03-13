@@ -74,11 +74,7 @@ nav a:hover{
 .hambimenu{
     display: block;
 }
-.hambimenu span{
-    width: 20%;
-    background-color: black;
 
-}
 
 .hambimenu{
     display: none;
@@ -105,18 +101,20 @@ nav a:hover{
 
 .hambimenumain{
     display: flex;
-        flex-direction: column;
-        text-align: center;
-        gap: 80px;
-        width: 30%;
-        height: 60%;
-        background-color: grey;
-        right: -100%;
-        top: 21%;
-        position: absolute;
-        transition: 0.4s;
-        opacity: 1;
-        border-radius: 0px;
+    flex-direction: column;
+    text-align: center;
+    gap: 80px;
+    width: 30%;
+    height: 50%;
+    background-color: grey;
+    right: -100%;
+    top: 169px;
+    position: absolute;
+    transition: 0.4s;
+    opacity: 1;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    padding-top: 10%;
    
 }
 .hambimenumain a{
@@ -235,7 +233,41 @@ th{
 tr,th{
     padding: 20px 50px;
 }
+.sidecart{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 80px;
+    width: 25%;
+    height: 80%;
+    background-color: grey;
+    right: -100%;
+    top: 169px;
+    position: absolute;
+    transition: 0.4s;
+    opacity: 1;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    
+   
 
+}
+.sidecart.active{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 80px;
+    width: 35%;
+    height: 80%;
+    background-color: grey;
+    right: 0;
+    top: 169px;
+    position: absolute;
+    transition: 0.4s;
+    opacity: 1;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+}
 
 
 
@@ -259,14 +291,16 @@ tr,th{
         text-align: center;
         gap: 80px;
         width: 30%;
-        height: 60%;
+        height: 50%;
         background-color: grey;
         right: 0;
         top: 169px;
         position: absolute;
-        transition: 0.4s;
+        transition: 0.4s;   
         opacity: 1;
-        border-radius: 0px;
+        border-top-left-radius: 80px;
+        border-bottom-left-radius: 100px;
+        padding-top: 10%;
   
     }
     .hambimenumain img{
