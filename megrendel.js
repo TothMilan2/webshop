@@ -34,12 +34,55 @@ const hambi = document.querySelector('.hambimenu');
 const hamburgerMenu = document.querySelector('.hambimenumain');
 
 
+/*A kosárba rakás*/ 
+if(document.readyState=="loading"){
+  document.addEventListener('DOMContentLoaded',ready)
+}else{
+  ready()
+}
+function ready(){
+  var addToCartButton=document.getElementsByClassName('megrendelgomb')
+  for(var i =0; i< addToCartButton.length;i++){
+      var button=addToCartButton[i]
+      button.addEventListener('click', addToCartClicked
+      
+      )
+  }
+}
+function addToCartClicked(event){
+  var button=event.target 
+  var ShopItem=button.parentElement
+  var ciposzoveg=document.getElementById("text").innerHTML
+  var ar=document.getElementsByClassName('elemara')
+  var kep=document.getElementById("image")
+  console.log(ciposzoveg , ar, kep.src )
+  addItemToCart(ciposzoveg,kep)
+}
+
+function addItemToCart(ciposzoveg,kep){
+  var cartRow=document.querySelector(".sidecart")
+
+  var cartRowContent= `
+                    <div class="cart-item">
+                                  <img class="image-cart-item " src="${kep}">
+                                  <span class="cart-item-title">${ciposzoveg}</span>
+                              </div>
+                              
+                              
+                              <div class="cart-mennyiseg">
+                                  <input type="number" value="1">
+                              </div>`
+  cartRow.innerHTML=cartRowContent
+  var cartItems=document.createElement('div')
+  cartRow.append(cartItems)
+  
+}
 
 
 
  
 
-
+/*Nincs átfedés a hambimenu és a kosár között*/
 document.addEventListener("DOMContentLoaded", function () {
   const cartIcon = document.querySelector(".navkep");
   const sideCart = document.querySelector(".sidecart");

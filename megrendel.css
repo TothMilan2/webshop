@@ -235,7 +235,7 @@ tr,th{
 }
 .sidecart{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     text-align: center;
     gap: 80px;
     width: 25%;
@@ -246,18 +246,25 @@ tr,th{
     position: absolute;
     transition: 0.4s;
     opacity: 1;
-    border-top-left-radius: 100px;
-    border-bottom-left-radius: 100px;
+
     
    
 
 }
-.sidecart.active{
+.image-cart-item{
+    width: 60%;
+}
+.cart-item{
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+.sidecart.active{
+    display: flex;
+    flex-direction: row;
     text-align: center;
     gap: 80px;
-    width: 35%;
+    width: fit-content;
     height: 80%;
     background-color: grey;
     right: 0;
@@ -265,8 +272,7 @@ tr,th{
     position: absolute;
     transition: 0.4s;
     opacity: 1;
-    border-top-left-radius: 100px;
-    border-bottom-left-radius: 100px;
+
 }
 
 
