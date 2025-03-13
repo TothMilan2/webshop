@@ -99,7 +99,7 @@ function openImagePage8() {
 }
 function openImagePage9() {
     // The path to the image, and any text you want to pass
-    const kep = "./kepek/nikerovid.png";  // Path to the image
+    const kep = "./kepek/FEKETEwebp.webp";  // Path to the image
     const szoveg = "Véééééégre2";  // Some text to pass
 
     // Create the URL for the second page (megrendel.html)
@@ -110,7 +110,7 @@ function openImagePage9() {
 }
 function openImagePage10() {
     // The path to the image, and any text you want to pass
-    const kep = "./kepek/thras.webp";  // Path to the image
+    const kep = "./kepek/bezs.jpg";  // Path to the image
     const szoveg = "Véééééégre2";  // Some text to pass
 
     // Create the URL for the second page (megrendel.html)
@@ -121,7 +121,7 @@ function openImagePage10() {
 }
 function openImagePage11() {
     // The path to the image, and any text you want to pass
-    const kep = "./kepek/fubu.webp";  // Path to the image
+    const kep = "./kepek/feherkek.jpg";  // Path to the image
     const szoveg = "Véééééégre2";  // Some text to pass
 
     // Create the URL for the second page (megrendel.html)
@@ -132,7 +132,7 @@ function openImagePage11() {
 }
 function openImagePage12() {
     // The path to the image, and any text you want to pass
-    const kep = "./kepek/wuwearjens.webp";  // Path to the image
+    const kep = "./kepek/raiders.jpg";  // Path to the image
     const szoveg = "Véééééégre2";  // Some text to pass
 
     // Create the URL for the second page (megrendel.html)

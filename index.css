@@ -9,6 +9,7 @@ body{
     height: 100%;
     width: 100%;
     margin: 0;
+  background-image: url(kepek/hophipwebp.webp);
 
 }
 
@@ -284,7 +285,7 @@ tr,th{
 }
 .vans{
     width: 110%;
-    margin-top: -15px;
+    margin-top: -50px;
     
 }
 .newbalance{
@@ -328,17 +329,19 @@ tr,th{
     margin: none;
 }
 .rovid{
-    width: 50%;
+    width: 75%;
+    margin-top: 20px;
 }
 .trash{
-    width: 40%;
-
+    width: 80%;
+    margin-top: -40px;
 }
 .fubu{
-    width: 55%;
+    width: 100%;
 }
 .wutang{
-    width: 47%;
+    width: 80%;
+    margin-top: -35px;
 }
 
 .navkep2{
@@ -349,7 +352,19 @@ tr,th{
     margin: auto;
     margin-top: 12px;
     width: 50%;
+    margin-left: 50px;
+    font-family: "Rapfont";
+    src: url("Timegoing\ Regular.ttf");
+    font-size: 30px;
   
+}
+.szovegakepalattvans
+{
+    margin-left: 60px;
+    font-family: "Rapfont";
+    src: url("Timegoing\ Regular.ttf");
+    font-size: 30px;
+    margin-top: 13px;
 }
 
     
