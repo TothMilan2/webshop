@@ -16,7 +16,7 @@ function openImagePage() {
 
 function openImagePage2() {
     // The path to the image, and any text you want to pass
-    const kep = "./kepek/vans.jpg";  // Path to the image
+    const kep = "./kepek/vans.webp";  // Path to the image
     const szoveg = "Vans Old School ";
     const szoveg2 = "20000Ft";  // Some text to pass
 
@@ -77,8 +77,8 @@ function openImagePage6() {
 
 function openImagePage7() {
     // The path to the image, and any text you want to pass
-    const kep = "./kepek/NBA.webp";  // Path to the image
-    const szoveg = "NBA Los Angeles Lakers-Lebron James";  // Some text to pass
+    const kep = "./kepek/Barry.jpg";  // Path to the image
+    const szoveg = "Barry Sanders #20 Detroit Lions Nike Game NFL Jersey Blue";  // Some text to pass
 
     // Create the URL for the second page (megrendel.html)
     const url = `megrendel.html?image=${encodeURIComponent(kep)}&text=${encodeURIComponent(szoveg)}`;
@@ -88,8 +88,8 @@ function openImagePage7() {
 }
 function openImagePage8() {
     // The path to the image, and any text you want to pass
-    const kep = "./kepek/newera.webp";  // Path to the image
-    const szoveg = "New Era Fullcap";  // Some text to pass
+    const kep = "./kepek/duckswebp.webp";  // Path to the image
+    const szoveg = "Anaheim Ducks 2024 Fanatics Premium Official NHL AWAY Jersey";  // Some text to pass
 
     // Create the URL for the second page (megrendel.html)
     const url = `megrendel.html?image=${encodeURIComponent(kep)}&text=${encodeURIComponent(szoveg)}`;
@@ -121,7 +121,7 @@ function openImagePage10() {
 }
 function openImagePage11() {
     // The path to the image, and any text you want to pass
-    const kep = "./kepek/fubu.jpg";  // Path to the image
+    const kep = "./kepek/fubu.webp";  // Path to the image
     const szoveg = "Véééééégre2";  // Some text to pass
 
     // Create the URL for the second page (megrendel.html)
