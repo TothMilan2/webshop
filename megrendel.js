@@ -40,35 +40,34 @@ const hamburgerMenu = document.querySelector('.hambimenumain');
  
 
 
+document.addEventListener("DOMContentLoaded", function () {
+  const cartIcon = document.querySelector(".navkep");
+  const sideCart = document.querySelector(".sidecart");
 
-    document.addEventListener("DOMContentLoaded", function () {
-        const cartIcon = document.querySelector(".navkep");
-        const sideCart = document.querySelector(".sidecart");
 
- 
-        
-        if (cartIcon) {
-            cartIcon.addEventListener("click", function () {
-                console.log("Cart icon clicked!");
-                if (sideCart) {
-                    sideCart.classList.toggle('active');
-   
-                    
-                    
-                }
-                else{
-                    console.error("Nincs meg a sideCART")
-                }
-                
-            });
-        } else {
-            console.error("Nem található a .carticon elem!");
-        }
-    });
-    const sideCart = document.querySelector(".sidecart");
+  
+  if (cartIcon) {
+      cartIcon.addEventListener("click", function () {
+          console.log("Cart icon clicked!");
+          if (sideCart) {
+              sideCart.classList.toggle('active');
 
-    document.addEventListener("DOMContentLoaded", function () {
-        const cartIcon2 = document.querySelector(".navkep2");
+              
+              
+          }
+          else{
+              console.error("Nincs meg a sideCART")
+          }
+          
+      });
+  } else {
+      console.error("Nem található a .carticon elem!");
+  }
+});
+const sideCart = document.querySelector(".sidecart");
+
+document.addEventListener("DOMContentLoaded", function () {
+  const cartIcon2 = document.querySelector(".navkep2");
         
  
         
