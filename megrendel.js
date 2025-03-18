@@ -34,6 +34,14 @@ const hambi = document.querySelector('.hambimenu');
 const hamburgerMenu = document.querySelector('.hambimenumain');
 
 
+
+
+
+
+
+
+
+
 /*A kosárba rakás*/ 
 if(document.readyState=="loading"){
   document.addEventListener('DOMContentLoaded',ready)
@@ -51,10 +59,9 @@ function ready(){
 }
 function addToCartClicked(event){
   var button=event.target 
-  var ShopItem=button.parentElement
   var ciposzoveg=document.getElementById("text").innerHTML
   var ar=document.getElementsByClassName('elemara')
-  var kep=document.getElementById("image")
+  var kep=document.getElementById("image").src
   console.log(ciposzoveg , ar, kep.src )
   addItemToCart(ciposzoveg,kep)
 }
@@ -71,7 +78,8 @@ function addItemToCart(ciposzoveg,kep){
                               
                               <div class="cart-mennyiseg">
                                   <input type="number" value="1">
-                              </div>`
+                              </div>
+                              <div><button>Vásárlás</button></div>`
   cartRow.innerHTML=cartRowContent
   var cartItems=document.createElement('div')
   cartRow.append(cartItems)
@@ -135,7 +143,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 
-    
+    /*hambimenu működése*/
     hambi.addEventListener('click', () => {
         if(!sideCart.classList.contains("active")){
             hamburgerMenu.classList.toggle('active');

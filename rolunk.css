@@ -46,15 +46,71 @@ nav img{
     font-family: Rapfont;
 
 }
-footer{
-    height: 20%;
-    background-color: #272525;
-    bottom: 0;
-    margin-top: 20%;
+footer {
+    background: linear-gradient(135deg, #c5c1be, #000000); /* Gradient for a cutting-edge look */
     color: white;
+    padding: 30px 0;
+    text-align: center;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .footer-left, .footer-center, .footer-right {
+    flex: 1;
+  }
+  
+  footer p {
+    font-size: 14px;
+    color: #fff;
+  }
+  
+  /* Center content with navigation links */
+  footer nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 19px;
     position: relative;
-    height: 30vh;
-}
+    transition: color 0.3s ease;
+  }
+  
+  footer nav a:hover {
+    color: #0a0a0a;
+  }
+  
+  /* Social icons styling */
+  .social-icons {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .social-icon {
+    background-color: white;
+    color: #ff6a00;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    transform: scale(1.2);
+    background-color: #141413;
+    color: white;
+  }
 nav a{
     text-decoration: none;
     color: white;
