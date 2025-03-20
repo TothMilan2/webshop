@@ -444,6 +444,95 @@ tr,th{
     margin-top: 13px;
 }
 
-    
+@media only screen and (max-width:850px){
+        .in_shop{
+            display: grid;
+
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+        .szovegakepalatt{
+            font-size: 1rem;
+            margin: 0
+            
+        }
+        .szovegakepalattvans{
+            margin: 0;
+            font-size: 1rem;
+        }
+        #shop_content{
+            width: 300px;
+        }
+        .shop, .in_shop{
+            height: fit-content;
+        }
+        /*cipők*/
+        .dcshoes{
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            width: 200px;
+            margin-top: 0;
+            margin-left: 15%;
+        }
+        .sbkep{
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            width: 200px;
+            margin-left: 15%;
+
+        }
+        .vans{
+            margin-top: 2%;
+        }
+        .newbalance{
+            
+            grid-row-start: 2;
+            grid-row-end: 3;
+            width: 200px;
+        }
+               /*pólók*/
+        .wuwear{
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            width: 200px;
+            margin-top: 0;
+            margin-left: 15%;
+        }
+        .NBA{
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            width: 200px;
+            margin-left: 15%;
+
+        }
+
+        /*sapkák*/
+        .rovid{
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            width: 200px;
+            margin-top: 0;
+            margin-left: 15%;
+        }
+        .fubu{
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            width: 200px;
+            margin-left: 15%;
+
+        }
+
+}
 
 

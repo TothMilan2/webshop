@@ -79,7 +79,7 @@ function addItemToCart(ciposzoveg,kep){
                               <div class="cart-mennyiseg">
                                   <input type="number" value="1">
                               </div>
-                              <div><button>Vásárlás</button></div>`
+                              <div><button class="gombocs">VÁSÁRLÁS</button></div>`
   cartRow.innerHTML=cartRowContent
   var cartItems=document.createElement('div')
   cartRow.append(cartItems)
@@ -166,3 +166,11 @@ document.addEventListener("DOMContentLoaded", function () {
                 hambi.classList.remove('active')
                 
             }});
+
+
+            const gombocska=document.querySelector(".gombocs")
+            gombocska.addEventListener("click", function() {
+              // Check if click was outside the menu or hamburger
+              window.location.href = "kosar.html";
+                  
+              });

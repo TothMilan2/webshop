@@ -9,78 +9,134 @@ const hamburgerMenu = document.querySelector('.hambimenumain');
 
 
 
-    document.addEventListener("DOMContentLoaded", function () {
-        const cartIcon = document.querySelector(".navkep");
-        const sideCart = document.querySelector(".sidecart");
-
- 
+if(document.readyState=="loading"){
+    document.addEventListener('DOMContentLoaded',ready)
+  }else{
+    ready()
+  }
+  function ready(){
+    var addToCartButton=document.getElementsByClassName('megrendelgomb')
+    for(var i =0; i< addToCartButton.length;i++){
+        var button=addToCartButton[i]
+        button.addEventListener('click', addToCartClicked
         
-        if (cartIcon) {
-            cartIcon.addEventListener("click", function () {
-                console.log("Cart icon clicked!");
-                if (sideCart) {
-                    sideCart.classList.toggle('active');
+        )
+    }
+  }
+  function addToCartClicked(event){
+    var button=event.target 
+    var ciposzoveg=document.getElementById("text").innerHTML
+    var ar=document.getElementsByClassName('elemara')
+    var kep=document.getElementById("image").src
+    console.log(ciposzoveg , ar, kep.src )
+    addItemToCart(ciposzoveg,kep)
+  }
+  
+  function addItemToCart(ciposzoveg,kep){
+    var cartRow=document.querySelector(".sidecart")
+  
+    var cartRowContent= `
+                      <div class="cart-item">
+                                    <img class="image-cart-item " src="${kep}">
+                                    <span class="cart-item-title">${ciposzoveg}</span>
+                                </div>
+                                
+                                
+                                <div class="cart-mennyiseg">
+                                    <input type="number" value="1">
+                                </div>
+                                <div><button>Vásárlás</button></div>`
+    cartRow.innerHTML=cartRowContent
+    var cartItems=document.createElement('div')
+    cartRow.append(cartItems)
+    
+  }
+  
+  
+  
    
-                    
-                    
-                }
-                else{
-                    console.error("Nincs meg a sideCART")
-                }
-                
-            });
-        } else {
-            console.error("Nem található a .carticon elem!");
-        }
-    });
+  
+  /*Nincs átfedés a hambimenu és a kosár között*/
+  document.addEventListener("DOMContentLoaded", function () {
+    const cartIcon = document.querySelector(".navkep");
     const sideCart = document.querySelector(".sidecart");
-
-    document.addEventListener("DOMContentLoaded", function () {
-        const cartIcon2 = document.querySelector(".navkep2");
-        
- 
-        
-        if (cartIcon2) {
-            cartIcon2.addEventListener("click", function () {
-                console.log("Cart icon clicked!");
-                if (sideCart) {
-                    sideCart.classList.toggle('active');
-                    hamburgerMenu.classList.remove("active");
-                    hambi.classList.remove('active')
-                    
-                    
-                }
-                else{
-                    console.error("Nincs meg a sideCART")
-                }
-                
-            });
-        } else {
-            console.error("Nem található a .carticon elem!");
-        }
-    });
-
-
+  
+  
     
-    hambi.addEventListener('click', () => {
-        if(!sideCart.classList.contains("active")){
-            hamburgerMenu.classList.toggle('active');
-            hambi.classList.toggle('active')
-        }
-        else{
-            hamburgerMenu.classList.toggle('active');
-            hambi.classList.toggle('active')
-            sideCart.classList.remove("active")
-        }
-        
-    
-       
-        })
-
-        hambi.addEventListener("click", function(event) {
-            // Check if click was outside the menu or hamburger
-            if (!hamburgerMenu.contains(event.target) && event.target !== hambi) {
-                hamburgerMenu.classList.remove("active");
-                hambi.classList.remove('active')
+    if (cartIcon) {
+        cartIcon.addEventListener("click", function () {
+            console.log("Cart icon clicked!");
+            if (sideCart) {
+                sideCart.classList.toggle('active');
+  
                 
-            }});
+                
+            }
+            else{
+                console.error("Nincs meg a sideCART")
+            }
+            
+        });
+    } else {
+        console.error("Nem található a .carticon elem!");
+    }
+  });
+  const sideCart = document.querySelector(".sidecart");
+  
+  document.addEventListener("DOMContentLoaded", function () {
+    const cartIcon2 = document.querySelector(".navkep2");
+          
+   
+          
+          if (cartIcon2) {
+              cartIcon2.addEventListener("click", function () {
+                  console.log("Cart icon clicked!");
+                  if (sideCart) {
+                      sideCart.classList.toggle('active');
+                      hamburgerMenu.classList.remove("active");
+                      hambi.classList.remove('active')
+                      
+                      
+                  }
+                  else{
+                      console.error("Nincs meg a sideCART")
+                  }
+                  
+              });
+          } else {
+              console.error("Nem található a .carticon elem!");
+          }
+      });
+  
+  
+      /*hambimenu működése*/
+      hambi.addEventListener('click', () => {
+          if(!sideCart.classList.contains("active")){
+              hamburgerMenu.classList.toggle('active');
+              hambi.classList.toggle('active')
+          }
+          else{
+              hamburgerMenu.classList.toggle('active');
+              hambi.classList.toggle('active')
+              sideCart.classList.remove("active")
+          }
+          
+      
+         
+          })
+  
+          hambi.addEventListener("click", function(event) {
+              // Check if click was outside the menu or hamburger
+              if (!hamburgerMenu.contains(event.target) && event.target !== hambi) {
+                  hamburgerMenu.classList.remove("active");
+                  hambi.classList.remove('active')
+                  
+              }});
+  
+  
+              const gombocska=document.querySelector(".gombocs")
+              gombocska.addEventListener("click", function(event) {
+                // Check if click was outside the menu or hamburger
+                window.location.href = "kosar.html";
+                    
+                });

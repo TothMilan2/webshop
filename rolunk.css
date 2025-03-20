@@ -190,6 +190,9 @@ h1{
 }
 .tortenetdiv,.rolunkdiv{
     margin-top: 15%;
+    margin-bottom: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 table{
@@ -292,4 +295,9 @@ tr,th{
     opacity: 1;
     border-top-left-radius: 100px;
     border-bottom-left-radius: 100px;
+}
+@media only screen and(max-width: 673px){
+    .rolunkszoveg{
+     
+    }
 }
