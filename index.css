@@ -9,7 +9,16 @@ body{
     height: 100%;
     width: 100%;
     margin: 0;
-  background-image: url(kepek/hophipwebp.webp);
+    background-image: url(kepek/pexels-nicholas-hatherly-1003886-2192938.jpg);
+    background-size: 132%;
+    background-repeat: no-repeat;
+    
+
+    
+    
+
+  
+
 
 }
 
@@ -23,6 +32,14 @@ header{
     gap: 30%;
     padding-left: 30px;
     background-image: url(./kepek/rap.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-bottom: 6px solid purple;
+    
+    
+ 
+    
+    
     
 }
 footer{
@@ -33,6 +50,7 @@ footer{
     position: relative;
     height: 30vh;
     margin-top: 20%;
+    border-top: solid 6px purple;
 }
 nav a{
     text-decoration: none;
@@ -270,31 +288,34 @@ tr,th{
     border-bottom-left-radius: 100px;
 }
 .sbkep{
-    width: 100%;
-    margin-top: 50px
+    width: 140%;
+    margin-top: 35px;
+    
     
     
 }
 .dcshoes{
-    width: 100%;
+    width: 110%;
     margin-left: none;
-    margin-top: 40px;
-    
-    
-    
+    margin-top: 55px;
+
 }
 .vans{
-    width: 110%;
-    margin-top: -50px;
+    width: 120%;
+    margin-top: -30px;
     
 }
 .newbalance{
-    width: 100%;
-    margin-top: 30px;
+    width: 120%;
+    margin-top: 25px;
+    
     
 }
 .shop{
     width: 110%;
+    margin-top: 0px;
+
+    margin-top: 0px;
     margin-bottom: 5%;
     
 }
@@ -311,6 +332,7 @@ tr,th{
     margin-bottom: 20%;
     margin-left: none;
     margin-right: none;
+    
 
 }
 .nikevintage{
@@ -356,6 +378,10 @@ tr,th{
     font-family: "Rapfont";
     src: url("Timegoing\ Regular.ttf");
     font-size: 30px;
+    color: black;
+    background-color: whitesmoke;
+    opacity: 0.89;
+    text-align: center;
   
 }
 .szovegakepalattvans
@@ -365,6 +391,32 @@ tr,th{
     src: url("Timegoing\ Regular.ttf");
     font-size: 30px;
     margin-top: 13px;
+    color: black;
+    background-color: whitesmoke;
+    opacity: 0.85;
+    text-align: center;
+    width: 165px;
+}
+.block1{    
+       
+opacity: 100%;
+
+  
+
+}
+.szovegakepalattdc{
+    margin-left: 60px;
+    font-family: "Rapfont";
+    src: url("Timegoing\ Regular.ttf");
+    font-size: 30px;
+    margin-top: 13px;
+    color: black;
+    background-color: whitesmoke;
+    opacity: 0.85;
+    text-align: center;
+    width: 165px;
+    margin-right: 40px;
+    
 }
 
     
