@@ -3,9 +3,13 @@
     src: url("Timegoing\ Regular.ttf");
   }
 body{
-    height: 100%;
+    min-height: 100%;
     width: 100%;
     margin: 0;
+    overflow-x: hidden;
+}
+html{
+    height: fit-content;
 }
 
 /*Header*/
@@ -43,15 +47,73 @@ nav img{
     font-family: Rapfont;
 
 }
-footer{
-    height: 20%;
-    background-color: #272525;
-    bottom: 0;
-    margin-top: 20%;
+footer {
+    background: linear-gradient(135deg, #c5c1be, #000000); /* Gradient for a cutting-edge look */
     color: white;
+    padding: 30px 0;
+    text-align: center;
+    bottom: 0;
     position: relative;
-    height: 30vh;
-}
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .footer-left, .footer-center, .footer-right {
+    flex: 1;
+  }
+  
+  footer p {
+    font-size: 14px;
+    color: #fff;
+  }
+  
+  /* Center content with navigation links */
+  footer nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 19px;
+    position: relative;
+    transition: color 0.3s ease;
+  }
+  
+  footer nav a:hover {
+    color: #0a0a0a;
+  }
+  
+  /* Social icons styling */
+  .social-icons {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .social-icon {
+    background-color: white;
+    color: #ff6a00;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    transform: scale(1.2);
+    background-color: #141413;
+    color: white;
+  }
 nav a{
     text-decoration: none;
     color: white;
@@ -138,7 +200,7 @@ nav a:hover{
     flex-direction: row;
     justify-content: center;
     border-top: 2px solid rgb(112, 33, 33);
-    
+    margin-bottom: 7%;
     
     
 }
@@ -184,6 +246,7 @@ nav a:hover{
     transition: 0.4s;
 
 }
+
 .kerekecskegombocska{
     border-radius: 0%;
     border-color: black;
@@ -235,7 +298,8 @@ tr,th{
 }
 .sidecart{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+
     text-align: center;
     gap: 80px;
     width: 25%;
@@ -246,18 +310,45 @@ tr,th{
     position: absolute;
     transition: 0.4s;
     opacity: 1;
-    border-top-left-radius: 100px;
-    border-bottom-left-radius: 100px;
+
     
    
-
+}
+.sidecart button{
+    float: left;
+    height: 30PX;
+    width: 80px;
+    border: 1px solid red;
+    border-radius: 10px;
+    background-color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    cursor: pointer;
+}
+.sidecart_flex{
+    display: flex;
+    flex-direction: row;
+}
+.image-cart-item{
+    width: 120px;
+    margin-left: 11px;
+    border-radius: 10px;
+}
+.cart-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-style: italic;
+}
+.cart-mennyiseg input{
+    border-radius: 5px;
+    height: 25px;
 }
 .sidecart.active{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     text-align: center;
-    gap: 80px;
-    width: 35%;
+    gap: 50px;
+    width: fit-content;
     height: 80%;
     background-color: grey;
     right: 0;
@@ -265,8 +356,8 @@ tr,th{
     position: absolute;
     transition: 0.4s;
     opacity: 1;
-    border-top-left-radius: 100px;
-    border-bottom-left-radius: 100px;
+    padding-top: 10px;
+    
 }
 
 
@@ -323,5 +414,34 @@ tr,th{
     font-family: "Rapfont";
     src: url("Timegoing\ Regular.ttf");
 }
+@media only screen and (max-width: 857px){
+    .megrendel{
+        flex-direction: column;
+    }
+    .megrendelkep{
+        width: 300px;
+        margin: auto;
+    }
+    .megrendelkep img{
+       
+    }
+    .leiras{
+        margin: auto;
+    }
+}
+@media only screen and (max-width: 553px){
+        .leiras{
+          margin-left: 100px;
+          margin-right: 50px;
+        }
+}
+@media only screen and (max-width: 500px){
+    .leiras{
+      margin-left: 60px;
+     margin-right: 0;
+     width: 80%;
+    }
+}
+    
 
 
