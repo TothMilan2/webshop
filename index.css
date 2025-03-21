@@ -4,14 +4,15 @@
   }
 html{
     overflow-x: hidden;
+    min-height: 100vh;
 }
 body{
-    height: 100%;
+    height: inherit;
     width: 100%;
     margin: 0;
-    background-image: url(kepek/pexels-nicholas-hatherly-1003886-2192938.jpg);
-    background-size: 132%;
-    background-repeat: no-repeat;
+    background-image: url(./brick.jpeg);
+    background-size: 100%;
+    background-repeat: repeat;
     
 
     
@@ -47,6 +48,7 @@ footer {
     color: white;
     padding: 30px 0;
     text-align: center;
+    margin-top: 15%;
   }
   
   .footer-content {
@@ -72,14 +74,8 @@ footer {
     color: white;
     margin: 0 15px;
     text-decoration: none;
-    font-size: 19px;
+    font-size: 22px;
     position: relative;
-<<<<<<< HEAD
-    height: 30vh;
-    margin-top: 20%;
-    border-top: solid 6px purple;
-}
-=======
     transition: color 0.3s ease;
   }
   
@@ -113,7 +109,6 @@ footer {
     background-color: #141413;
     color: white;
   }
->>>>>>> 4797615ffb4f8c18a6ed8b6ca56efae4cf8c9ffa
 nav a{
     text-decoration: none;
     color: white;
@@ -243,6 +238,7 @@ nav img{
     transition: 0.4s;
     opacity: 1;
     padding-top: 10px;
+    z-index: 10;
     
 }
 
@@ -349,7 +345,7 @@ tr,th{
         border-top-left-radius: 80px;
         border-bottom-left-radius: 100px;
         padding-top: 10%;
-
+        z-index: 10;
   
     }
     .hambimenumain img{
@@ -396,10 +392,10 @@ tr,th{
 }
 .shop{
     width: 110%;
-    margin-top: 0px;
+    margin-top: 50px;
 
     margin-top: 0px;
-    margin-bottom: 5%;
+    margin-bottom: 10%;
     
 }
 .in_shop{
@@ -416,6 +412,12 @@ tr,th{
     margin-left: none;
     margin-right: none;
     
+    
+
+}
+.shop img{
+
+    overflow: clip;
 
 }
 .nikevintage{
@@ -457,7 +459,7 @@ tr,th{
     margin: auto;
     margin-top: 12px;
     width: 50%;
-    margin-left: 50px;
+    margin-left: 15%;
     font-family: "Rapfont";
     src: url("Timegoing\ Regular.ttf");
     font-size: 30px;
@@ -465,11 +467,12 @@ tr,th{
     background-color: whitesmoke;
     opacity: 0.89;
     text-align: center;
+
   
 }
 .szovegakepalattvans
 {
-    margin-left: 60px;
+    margin-left: 15%;
     font-family: "Rapfont";
     src: url("Timegoing\ Regular.ttf");
     font-size: 30px;
@@ -479,6 +482,9 @@ tr,th{
     opacity: 0.85;
     text-align: center;
     width: 165px;
+}
+.szovegakepalattdcb{
+    margin-left: 15%;
 }
 .block1{    
        
@@ -510,10 +516,16 @@ opacity: 100%;
         }
         .szovegakepalatt{
             font-size: 1rem;
-            margin: 0
+            margin: 0;
+            margin-left: 24px;
+            
             
         }
         .szovegakepalattvans{
+            margin: 0;
+            font-size: 1rem;
+        }
+        .szovegakepalattdc{
             margin: 0;
             font-size: 1rem;
         }
@@ -593,4 +605,21 @@ opacity: 100%;
 
 }
 
+@media only screen and (max-width:1394px){
+    .szovegakepalatt{
+        font-size: 1.5rem;
+        margin-right: 15px;
+        
+    }
+    .szovegakepalattvans{
+      
+        font-size: 1.5rem;
+    }
+    .szovegakepalattdc{
+  
+        font-size: 1.5rem;
+    
+        
+    }
+}
 

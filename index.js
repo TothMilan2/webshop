@@ -16,7 +16,7 @@ function openImagePage() {
 
 function openImagePage2() {
     // The path to the image, and any text you want to pass
-    const kep = "./kepek/vans.webp";  // Path to the image
+    const kep = "kepek/vans-removebg-preview.png";  // Path to the image
     const szoveg = "Vans Old School ";
     const szoveg2 = "20000Ft";  // Some text to pass
 
