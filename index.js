@@ -100,7 +100,7 @@ function openImagePage8() {
 function openImagePage9() {
     // The path to the image, and any text you want to pass
     const kep = "./kepek/sarga.jpg";  // Path to the image
-    const szoveg = "Véééééégre2";  // Some text to pass
+    const szoveg = "New era trucker";  // Some text to pass
 
     // Create the URL for the second page (megrendel.html)
     const url = `megrendel.html?image=${encodeURIComponent(kep)}&text=${encodeURIComponent(szoveg)}`;
@@ -111,7 +111,7 @@ function openImagePage9() {
 function openImagePage10() {
     // The path to the image, and any text you want to pass
     const kep = "./kepek/bezs.jpg";  // Path to the image
-    const szoveg = "Véééééégre2";  // Some text to pass
+    const szoveg = "New era 39Thirty";  // Some text to pass
 
     // Create the URL for the second page (megrendel.html)
     const url = `megrendel.html?image=${encodeURIComponent(kep)}&text=${encodeURIComponent(szoveg)}`;
@@ -122,7 +122,7 @@ function openImagePage10() {
 function openImagePage11() {
     // The path to the image, and any text you want to pass
     const kep = "./kepek/feherkek.jpg";  // Path to the image
-    const szoveg = "Véééééégre2";  // Some text to pass
+    const szoveg = "New era Flat Brim";  // Some text to pass
 
     // Create the URL for the second page (megrendel.html)
     const url = `megrendel.html?image=${encodeURIComponent(kep)}&text=${encodeURIComponent(szoveg)}`;
@@ -133,7 +133,7 @@ function openImagePage11() {
 function openImagePage12() {
     // The path to the image, and any text you want to pass
     const kep = "./kepek/raiders.jpg";  // Path to the image
-    const szoveg = "Véééééégre2";  // Some text to pass
+    const szoveg = "Riders beanie";  // Some text to pass
 
     // Create the URL for the second page (megrendel.html)
     const url = `megrendel.html?image=${encodeURIComponent(kep)}&text=${encodeURIComponent(szoveg)}`;
