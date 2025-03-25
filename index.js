@@ -65,7 +65,7 @@ function openImagePage5() {
 
 function openImagePage6() {
     // The path to the image, and any text you want to pass
-    const kep = "./kepek/nikevintage.webp";  // Path to the image
+    const kep = "./kepek/kek2.webp";  // Path to the image
     const szoveg = "Nike vintage ";  // Some text to pass
 
     // Create the URL for the second page (megrendel.html)
@@ -99,7 +99,7 @@ function openImagePage8() {
 }
 function openImagePage9() {
     // The path to the image, and any text you want to pass
-    const kep = "./kepek/FEKETEwebp.webp";  // Path to the image
+    const kep = "./kepek/sarga.jpg";  // Path to the image
     const szoveg = "Véééééégre2";  // Some text to pass
 
     // Create the URL for the second page (megrendel.html)
